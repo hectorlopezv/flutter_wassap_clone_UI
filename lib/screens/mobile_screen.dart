@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:wassap_clone/colors.dart';
+import 'package:wassap_clone/widgets/contacts_list.dart';
 
 class MobileScreen extends StatelessWidget {
   const MobileScreen({Key? key}) : super(key: key);
@@ -12,7 +11,9 @@ class MobileScreen extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
+          backgroundColor: appBarColor,
+          elevation: 0,
+          title: const Text(
             "Whatsapp",
             style: TextStyle(
               color: Colors.grey,
@@ -37,7 +38,7 @@ class MobileScreen extends StatelessWidget {
               onPressed: () {},
             ),
           ],
-          bottom: TabBar(
+          bottom: const TabBar(
             indicatorColor: tabColor,
             labelColor: tabColor,
             unselectedLabelColor: Colors.grey,
@@ -55,7 +56,7 @@ class MobileScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: Text("hector"),
+        body: const ContactsList(),
       ),
     );
   }

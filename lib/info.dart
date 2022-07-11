@@ -101,19 +101,43 @@ const messages = [
     "text": "Looks great to me!",
     "time": "11:15 am",
   },
-  
-
   {"isMe": false, "text": "Thanks bro!", "time": "11:17 am"},
+  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
+  {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
   {
     "isMe": false,
-    "text": "Did you subscribe?",
-    "time": "11:16 am"
+    "text": "Cool, did you like the content?",
+    "time": "11:18 am",
   },
   {
     "isMe": true,
-    "text": "Yes, surely bro!",
-    "time": "11:17 am"
+    "text": "I loved it?",
+    "time": "11:19 am",
   },
+  {
+    "isMe": false,
+    "text": "OMG! Woah! Thanks!",
+    "time": "11:20 am",
+  },
+  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
+  {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
+  {
+    "isMe": false,
+    "text": "Cool, did you like the content?",
+    "time": "11:18 am",
+  },
+  {
+    "isMe": true,
+    "text": "I loved it?",
+    "time": "11:19 am",
+  },
+  {
+    "isMe": false,
+    "text": "OMG! Woah! Thanks!",
+    "time": "11:20 am",
+  },
+  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
+  {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
   {
     "isMe": false,
     "text": "Cool, did you like the content?",

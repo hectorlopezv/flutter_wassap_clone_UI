@@ -7,7 +7,7 @@ class WebProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.077,
+      height: MediaQuery.of(context).size.height * 0.068,
       width: MediaQuery.of(context).size.width * 0.3,
       padding: EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(

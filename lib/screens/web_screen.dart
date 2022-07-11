@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wassap_clone/widgets/contacts_list.dart';
 import 'package:wassap_clone/widgets/web_profile.dart';
+import 'package:wassap_clone/widgets/web_search_bar.dart';
 
 class WebScreen extends StatelessWidget {
   const WebScreen({Key? key}) : super(key: key);
@@ -14,12 +15,7 @@ class WebScreen extends StatelessWidget {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [
-                  WebProfile(),
-                  //web search bar
-
-                  ContactsList()
-                ],
+                children: [WebProfile(), WebSearchBar(), ContactsList()],
               ),
             ),
           ),

@@ -9,8 +9,8 @@ class WebProfile extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height * 0.068,
       width: MediaQuery.of(context).size.width * 0.3,
-      padding: EdgeInsets.symmetric(vertical: 10),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      decoration: const BoxDecoration(
           border: Border(
             right: BorderSide(
               color: dividerColor,
@@ -19,26 +19,26 @@ class WebProfile extends StatelessWidget {
           color: webAppBarColor),
       child: Row(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 10),
+         const Padding(
+            padding:  EdgeInsets.only(left: 10),
             child: CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg"),
               radius: 20,
             ),
           ),
-          Spacer(
+          const Spacer(
             flex: 1,
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.comment,
               color: Colors.grey,
             ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.more_vert,
               color: Colors.grey,
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wassap_clone/widgets/chat_input.dart';
 import 'package:wassap_clone/widgets/chat_list.dart';
 import 'package:wassap_clone/widgets/contacts_list.dart';
 import 'package:wassap_clone/widgets/web_chat_appbar.dart';
@@ -17,7 +18,11 @@ class WebScreen extends StatelessWidget {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [WebProfile(), WebSearchBar(), ContactsList()],
+                children: const [
+                  WebProfile(),
+                  WebSearchBar(),
+                  ContactsList(),
+                ],
               ),
             ),
           ),
@@ -30,12 +35,12 @@ class WebScreen extends StatelessWidget {
               ),
             ),
             child: Column(
-              children: [
+              children: const [
                 WebChatAppBar(),
                 Expanded(
                   child: ChatList(),
-                )
-                //Message Input Box
+                ),
+                ChatInput(),
               ],
             ),
           ),

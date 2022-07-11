@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wassap_clone/colors.dart';
 import 'package:wassap_clone/info.dart';
+import 'package:wassap_clone/screens/mobile_chat_screen.dart';
 
 class ContactsList extends StatelessWidget {
   const ContactsList({Key? key}) : super(key: key);
@@ -16,7 +17,13 @@ class ContactsList extends StatelessWidget {
           return Column(
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MobileChatScreen(),
+                    ),
+                  );
+                },
                 child: Padding(
                   padding: const EdgeInsets.all(
                     5,
